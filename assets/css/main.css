@@ -703,7 +703,7 @@ section,
 --------------------------------------------------------------*/
 .hero {
   --default-color: #ffffff;
-  --background-color: #000000;
+  --background-color: #424242;
   --heading-color: #ffffff;
   width: 100%;
   min-height: 100vh;
@@ -807,7 +807,7 @@ section,
 
 .hero .carousel-item::before {
   content: "";
-  background-color: color-mix(in srgb, var(--background-color), transparent 30%);
+  background-color: color-mix(in srgb, var(--background-color), transparent 50%);
   position: absolute;
   inset: 0;
   z-index: 2;
@@ -1333,6 +1333,28 @@ section,
   line-height: 24px;
   font-size: 14px;
   margin-bottom: 0;
+}
+
+/* Diğer filtre öğelerine uygulanan stil */
+.portfolio-filters li {
+  display: inline-block;
+  padding: 10px 10px;
+  cursor: pointer;
+}
+
+/* Daha Fazlasını Gör seçeneğinin stilini güncelleme */
+.portfolio-filters li a.filter-link {
+  display: inline-block;
+  padding: 10px 10px;
+  cursor: pointer;
+  text-decoration: none;
+  color: inherit; /* Varsa diğer renk stillerini de uygulayabilirsiniz */
+}
+
+/* Seçili öğe stilini kaldırma */
+.portfolio-filters li a.filter-link:focus,
+.portfolio-filters li a.filter-link:active {
+  outline: none;
 }
 
 /*--------------------------------------------------------------
